@@ -14,3 +14,17 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000);
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    const assunto = 'Mensagem de Contato';
+
+    const corpoEmail = `Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`;
+
+    window.location.href = `mailto:jnsds.25@gmail.com?subject=${assunto}&body=${encodeURIComponent(corpoEmail)}`;
+});
