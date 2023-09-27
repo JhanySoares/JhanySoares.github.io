@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     padding: 0;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #bdbbbb;
 }
 
 header {
     position: relative;
     text-align: center;
-    color: rgb(43, 42, 42);
+    color: #2b2a2a;
 }
 
 
@@ -27,33 +27,40 @@ nav ul {
 }
 
 nav a {
-    color: aliceblue;
+    color: #e0e0e0;
     text-decoration: none;
     padding: 8px 16px;
 }
 
 nav a:hover {
-    background-color: #bdbbbb;
+    background-color: #919191;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: #050505;
 }
 
 .photo img {
     padding: 10px 0;
     width: 250px;
-    height: 300px;
+    height: 320px;
     border-radius: 100%;
 }
 
 
 .text {
+    padding: 40px 50px;
+    color: rgb(43, 42, 42);
+}
+
+.about-me {
     padding: 15px 50px;
-    
-    
+    color: rgb(43, 42, 42);
+    background-color: #e0e0e0;
+    box-shadow: 2px 2px 5px #00000080;
 }
 
 .projects {
@@ -61,7 +68,6 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 25px 10px;
-
 }
 
 .image-button {
@@ -77,13 +83,58 @@ nav a:hover {
     height: 150px;
 }
 
-.contato {
+.contact {
     text-align: center;
     justify-content: center;
     display: flex;
-    padding: 25px 10px;
-    
+    margin: 20px auto;
+    padding: 15px 50px;
+    box-shadow: 2px 2px 5px #00000080;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
 
+.contact-icon {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form {
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 2px 2px 5px #00000080;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #696969;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #919191;
 }
 
 .scroll-to-top {
@@ -100,9 +151,9 @@ nav a:hover {
 }
 
 .clock {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: fixed ;
+    top: 50px;
+    right: 30px;
     color: #050505;
 }
 
@@ -110,14 +161,16 @@ iframe {
    text-align: center;
    justify-content: center;
    display: flex;
-   padding: 25px;
+   padding: 0px 8px;
+   border-radius: 12px;
+
 }
 
 footer {
     background-color: #818181;
-    color: rgb(0, 0, 0);
+    color: #f0f8ff;
     text-align: center;
-    padding: 6px 0;
+    padding: 1px;
 }
 
 [class*="col-"] {
